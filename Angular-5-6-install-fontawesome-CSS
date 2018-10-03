@@ -1,0 +1,32 @@
+
+How to install
+Install Packages :-  npm install --save font-awesome angular-font-awesome
+
+
+
+
+angular.json
+______________
+"styles": [
+              "src/styles.css", "node_modules/font-awesome/css/font-awesome.css"
+            ],
+----------------------------------------------------------------------------------------------
+app.module.ts
+______________
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,AngularFontAwesomeModule
+  ],
+  ----------------------------------------------------------------------------------------------
+  app.component.html
+  ______________
+  <i class="fa fa-cloud"></i>
+<i class="fa fa-heart"></i>
+<i class="fa fa-car"></i>
+<i class="fa fa-file"></i>
+<i class="fa fa-bars"></i>
